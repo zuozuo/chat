@@ -1,8 +1,30 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif !important;
+  background-color: #f5f5f5;
 }
 
 a {
   color: #00B7FF;
 }
+
+.well-white {
+	background-color: white;
+}
+
+.bs-docs-nav {
+  background-color: #563d7c;
+  padding-right: 15px;
+padding-left: 15px;
+  
+  
+}
+
+.bs-docs-nav a, 
+.nav-collapsecollapsebs-navbar-collapse li a {
+  color: white;
+}
+
+.bs-docs-container {
+  margin-top: 80px;
+}
+

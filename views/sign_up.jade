@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .row
+    .col-lg-4
+    .col-lg-4.well.well-white
+      form(action='/sign_up', method='post')
+        fieldset
+          legend= title
+        .form-group
+          label(for='exampleInputUsername') Username
+          input#username_input.form-control(type='text', placeholder='Enter username', name='user[username]')
+        .form-group
+          label(for='exampleInputEmail') Email address
+          input#email_input.form-control(type='text', placeholder='Enter email', name='user[email]')
+        .form-group
+          label(for='exampleInputPassword') Password
+          input#password_input.form-control(type='password', placeholder='Password', name='user[password]')
+        .checkbox
+          label
+            input(type='checkbox')
+            | Check me out
+        button.btn.btn-default(type='submit') Submit
+    .col-lg-4
+
+

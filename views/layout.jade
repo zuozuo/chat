@@ -2,6 +2,27 @@ doctype 5
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    .navbar.navbar-fixed-top.bs-docs-nav.navbar-inverse
+      .container
+        a.navbar-brand(href='#') Chat APP
+        .nav-collapsecollapsebs-navbar-collapse
+          .nav.navbar-nav
+            li
+              a(href="#") Getting Started
+            li
+              a(href="#") Css
+            li
+              a(href="#") Components
+          .nav.navbar-nav.pull-right
+            li
+              a(href='sign_in') 登陆
+            li
+              a(href='sign_up') 注册
+    .container.bs-docs-container
+      if flash_show
+        p!= flash_show()
+      block content
